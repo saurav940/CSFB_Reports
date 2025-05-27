@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Retail Internet Banking Test Suite</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">27-05-2025 15:54:10</span></a>
+<a href="#"><span class="badge badge-primary">27-05-2025 16:18:33</span></a>
 </li>
 </ul>
 </div>
@@ -97,7 +97,7 @@
           <div class="test-detail">
             <p class="name">verifyApplyNowRequest</p>
             <p class="text-sm">
-              <span>3:54:15 pm</span> / <span>00:00:19:073</span>
+              <span>4:18:37 pm</span> / <span>00:00:21:167</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -106,9 +106,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">verifyApplyNowRequest</h5>
-<span class='badge badge-success'>05.27.2025 3:54:15 pm</span>
-<span class='badge badge-danger'>05.27.2025 3:54:34 pm</span>
-<span class='badge badge-default'>00:00:19:073</span>
+<span class='badge badge-success'>05.27.2025 4:18:37 pm</span>
+<span class='badge badge-danger'>05.27.2025 4:18:58 pm</span>
+<span class='badge badge-default'>00:00:21:167</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -122,33 +122,45 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:54:15 pm</td>
+        <td>4:18:37 pm</td>
         <td>
           📌 Test Started: verifyApplyNowRequest
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:54:34 pm</td>
+        <td>4:18:58 pm</td>
         <td>
           <span class='badge white-text red'>Test FAILED ❌</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:54:34 pm</td>
+        <td>4:18:58 pm</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: Test Case Failed due to exception: element not interactable
-  (Session info: chrome=136.0.7103.114)
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [357e29f146a4f5d3f3c7f49a6e0e1a95, clickElement {id=f.D5AD9DC3F8B55E58AFC3158B127E6DF0.d.0C6046602EAF0101DE91A5E568A1E54E.e.183}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\SAURAV~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57920}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57920/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (357e29f146a4f5d3f3c7f49a6e0e1a95)] -> xpath: (//span[normalize-space()='Apply Now'])[1]]
-Session ID: 357e29f146a4f5d3f3c7f49a6e0e1a95
-	at org.testng.Assert.fail(Assert.java:111)
-	at com.retail_ib.testcase.Request_Apply_Now_TC.verifyApplyNowRequest(Request_Apply_Now_TC.java:87)
+Command: [0518cabc0cb1ba48580c706ca2815a9b, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\SAURAV~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58081}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58081/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0518cabc0cb1ba48580c706ca2815a9b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
+	at com.retail_ib.pages.BaseTest.captureScreenShot(BaseTest.java:96)
+	at com.retail_ib.testcase.Request_Apply_Now_TC.captureScreenshotOnFailure(Request_Apply_Now_TC.java:94)
+	at com.retail_ib.testcase.Request_Apply_Now_TC.verifyApplyNowRequest(Request_Apply_Now_TC.java:82)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -181,42 +193,49 @@ Session ID: 357e29f146a4f5d3f3c7f49a6e0e1a95
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:54:34 pm</td>
+        <td>4:18:58 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_Apply_Now_TC/01_Login_Success_20250527_155421.png' target='_blank'><img src='Screenshots/Request_Apply_Now_TC/01_Login_Success_20250527_155421.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:54:34 pm</td>
+        <td>4:18:58 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Request_Apply_Now_TC/01_Login_Success_20250527_161844.png' target='_blank'><img src='Screenshots/Request_Apply_Now_TC/01_Login_Success_20250527_161844.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:18:58 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_Apply_Now_TC/02_ApplyNow_Tab_Row1_20250527_155428.png' target='_blank'><img src='Screenshots/Request_Apply_Now_TC/02_ApplyNow_Tab_Row1_20250527_155428.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:54:34 pm</td>
+        <td>4:18:58 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_Apply_Now_TC/03_Before_Proceed_Row1_20250527_155431.png' target='_blank'><img src='Screenshots/Request_Apply_Now_TC/03_Before_Proceed_Row1_20250527_155431.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:54:34 pm</td>
+        <td>4:18:58 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_Apply_Now_TC/04_After_Submit_Row1_Ref_2025052702883395_20250527_155432.png' target='_blank'><img src='Screenshots/Request_Apply_Now_TC/04_After_Submit_Row1_Ref_2025052702883395_20250527_155432.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:54:34 pm</td>
+        <td>4:18:58 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_Apply_Now_TC/05_Logged_Out_20250527_155434.png' target='_blank'><img src='Screenshots/Request_Apply_Now_TC/05_Logged_Out_20250527_155434.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:54:34 pm</td>
+        <td>4:18:58 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_Apply_Now_TC/99_Final_Error_20250527_155433.png' target='_blank'><img src='Screenshots/Request_Apply_Now_TC/99_Final_Error_20250527_155433.png' width='300' height='200'/></a>
         </td>
@@ -248,12 +267,12 @@ Session ID: 357e29f146a4f5d3f3c7f49a6e0e1a95
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
+<p class="name">org.openqa.selenium.NoSuchSessionException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
+<h4>org.openqa.selenium.NoSuchSessionException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -267,7 +286,7 @@ Session ID: 357e29f146a4f5d3f3c7f49a6e0e1a95
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:54:15 pm</td>
+<td>16:18:37 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>verifyApplyNowRequest</a>
 </td>
@@ -316,7 +335,7 @@ Session ID: 357e29f146a4f5d3f3c7f49a6e0e1a95
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:54:15 pm</td>
+<td>16:18:37 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>verifyApplyNowRequest</a>
 </td>
@@ -338,13 +357,13 @@ Session ID: 357e29f146a4f5d3f3c7f49a6e0e1a95
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>27-05-2025 15:54:10</h3>
+<h3>27-05-2025 16:18:33</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>27-05-2025 15:54:35</h3>
+<h3>27-05-2025 16:18:59</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -397,8 +416,8 @@ Session ID: 357e29f146a4f5d3f3c7f49a6e0e1a95
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='22%'><b>2</b> events failed,
-<b data-tooltip='%'>7</b> others
+<small data-tooltip='20%'><b>2</b> events failed,
+<b data-tooltip='%'>8</b> others
 </small>
 </div>
 </div>
@@ -414,7 +433,7 @@ Session ID: 357e29f146a4f5d3f3c7f49a6e0e1a95
 </div></div>
 <script>
 var timeline = {
-"verifyApplyNowRequest":19.073
+"verifyApplyNowRequest":21.167
 };
 </script>
 <div class="row">
@@ -487,7 +506,7 @@ passEvents: 0,
 failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 7
+infoEvents: 8
 };
 </script>        </div>
       </div>
