@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Retail Internet Banking Test Suite</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">27-05-2025 13:18:38</span></a>
+<a href="#"><span class="badge badge-primary">27-05-2025 13:58:39</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -76,7 +71,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -90,25 +85,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="pass" test-id="2"
           author=""
           tag="RetailBanking"
           device="">
           <div class="test-detail">
             <p class="name">verifyIPOASBAFunctionality</p>
             <p class="text-sm">
-              <span>1:18:42 pm</span> / <span>00:00:08:673</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>1:58:43 pm</span> / <span>00:00:18:925</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyIPOASBAFunctionality</h5>
-<span class='badge badge-success'>05.27.2025 1:18:42 pm</span>
-<span class='badge badge-danger'>05.27.2025 1:18:50 pm</span>
-<span class='badge badge-default'>00:00:08:673</span>
+<h5 class="test-status text-pass">verifyIPOASBAFunctionality</h5>
+<span class='badge badge-success'>05.27.2025 1:58:43 pm</span>
+<span class='badge badge-danger'>05.27.2025 1:59:02 pm</span>
+<span class='badge badge-default'>00:00:18:925</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -122,152 +117,156 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:42 pm</td>
+        <td>1:58:43 pm</td>
         <td>
           📌 Test Started: verifyIPOASBAFunctionality
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>1:18:50 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:59:02 pm</td>
         <td>
-          <span class='badge white-text red'>Test FAILED ❌</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>1:18:50 pm</td>
-        <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: Test failed: element click intercepted: Element <a class="menu-item-link transition collapsed" data-toggle="collapse" data-placement="right" data-animation="true" data-container=".vertical-menu-tooltip-place" data-original-title="IPO (ASBA)" id="link4" href="#collapse4">...</a> is not clickable at point (125, 516). Other element would receive the click: <div _ngcontent-c5="" class="overlay ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); position: fixed;">...</div>
-  (Session info: chrome=136.0.7103.114)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [07a30356b291d1dbd8ae1fb922567028, clickElement {id=f.8A3700304A3A622B00CFDFF8483635CE.d.92BB6CDDCDC2C77B7963D6E844D8F931.e.162}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\SAURAV~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55902/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (07a30356b291d1dbd8ae1fb922567028)] -> xpath: //a[@id='link4' and contains(@href,'#collapse4')]]
-Session ID: 07a30356b291d1dbd8ae1fb922567028
-	at org.testng.Assert.fail(Assert.java:111)
-	at com.retail_ib.testcase.IPO_ASBA_TC.verifyIPOASBAFunctionality(IPO_ASBA_TC.java:54)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</textarea>
-          
+          <span class='badge white-text green'>Test PASSED ✅</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:50 pm</td>
+        <td>1:59:02 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/01_Login_Success_20250527_124705.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/01_Login_Success_20250527_124705.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:50 pm</td>
+        <td>1:59:02 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/01_Login_Success_20250527_125343.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/01_Login_Success_20250527_125343.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:50 pm</td>
+        <td>1:59:02 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/01_Login_Success_20250527_125818.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/01_Login_Success_20250527_125818.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:50 pm</td>
+        <td>1:59:02 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/01_Login_Success_20250527_131848.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/01_Login_Success_20250527_131848.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:50 pm</td>
+        <td>1:59:02 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/01_Login_Success_20250527_135851.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/01_Login_Success_20250527_135851.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:59:02 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/02_Expand_IPO_Menu_20250527_135853.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/02_Expand_IPO_Menu_20250527_135853.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:59:02 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/02_IPO_Section_Opened_20250527_124707.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/02_IPO_Section_Opened_20250527_124707.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:50 pm</td>
+        <td>1:59:02 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/03_Click_IPO_Tab_20250527_135853.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/03_Click_IPO_Tab_20250527_135853.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:59:02 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/03_Continue_Clicked_20250527_124707.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/03_Continue_Clicked_20250527_124707.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:50 pm</td>
+        <td>1:59:02 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/04_Click_Continue_20250527_135853.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/04_Click_Continue_20250527_135853.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:59:02 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/05_Logged_Out_20250527_131850.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/05_Logged_Out_20250527_131850.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:50 pm</td>
+        <td>1:59:02 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/05_Verify_New_Window_20250527_135902.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/05_Verify_New_Window_20250527_135902.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:59:02 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/06_Logged_Out_20250527_135902.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/06_Logged_Out_20250527_135902.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:59:02 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/99_Final_Error_20250527_125345.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/99_Final_Error_20250527_125345.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:50 pm</td>
+        <td>1:59:02 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/99_Final_Error_20250527_125820.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/99_Final_Error_20250527_125820.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:50 pm</td>
+        <td>1:59:02 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/99_Final_Error_20250527_131850.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/99_Final_Error_20250527_131850.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:50 pm</td>
+        <td>1:59:02 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/verifyIPOASBAFunctionality_20250527_125406.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/verifyIPOASBAFunctionality_20250527_125406.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:50 pm</td>
+        <td>1:59:02 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/verifyIPOASBAFunctionality_20250527_125841.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/verifyIPOASBAFunctionality_20250527_125841.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:18:50 pm</td>
+        <td>1:59:02 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/verifyIPOASBAFunctionality_20250527_131023.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/verifyIPOASBAFunctionality_20250527_131023.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:59:02 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/verifyIPOASBAFunctionality_20250527_131851.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/verifyIPOASBAFunctionality_20250527_131851.png' width='300' height='200'/></a>
         </td>
       </tr>
   </tbody>
@@ -284,56 +283,7 @@ Session ID: 07a30356b291d1dbd8ae1fb922567028
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.AssertionError</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>13:18:42 pm</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>verifyIPOASBAFunctionality</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
@@ -344,7 +294,7 @@ Session ID: 07a30356b291d1dbd8ae1fb922567028
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
 <p class="name">RetailBanking</p>
 <p class="duration text-sm">1 tests</p>
@@ -352,7 +302,7 @@ Session ID: 07a30356b291d1dbd8ae1fb922567028
 <div class="test-contents d-none">
 <div class="info">
 <h4>RetailBanking</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -363,9 +313,9 @@ Session ID: 07a30356b291d1dbd8ae1fb922567028
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>13:18:42 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:58:43 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>verifyIPOASBAFunctionality</a>
 </td>
@@ -387,25 +337,25 @@ Session ID: 07a30356b291d1dbd8ae1fb922567028
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>27-05-2025 13:18:38</h3>
+<h3>27-05-2025 13:58:39</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>27-05-2025 13:18:52</h3>
+<h3>27-05-2025 13:59:04</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -421,12 +371,12 @@ Session ID: 07a30356b291d1dbd8ae1fb922567028
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='100%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> tests failed,
+<small data-tooltip='0%'><b>0</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -444,10 +394,10 @@ Session ID: 07a30356b291d1dbd8ae1fb922567028
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='4%'><b>1</b> events passed</small></div>
 <div>
-<small data-tooltip='12%'><b>2</b> events failed,
-<b data-tooltip='%'>14</b> others
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>21</b> others
 </small>
 </div>
 </div>
@@ -463,7 +413,7 @@ Session ID: 07a30356b291d1dbd8ae1fb922567028
 </div></div>
 <script>
 var timeline = {
-"verifyIPOASBAFunctionality":8.673
+"verifyIPOASBAFunctionality":18.925
 };
 </script>
 <div class="row">
@@ -474,11 +424,11 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>RetailBanking</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -515,8 +465,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -532,11 +482,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 2,
+passEvents: 1,
+failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 14
+infoEvents: 21
 };
 </script>        </div>
       </div>
