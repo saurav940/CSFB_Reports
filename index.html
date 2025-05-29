@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Retail Internet Banking Test Suite</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">29-05-2025 22:21:45</span></a>
+<a href="#"><span class="badge badge-primary">29-05-2025 22:26:45</span></a>
 </li>
 </ul>
 </div>
@@ -97,7 +97,7 @@
           <div class="test-detail">
             <p class="name">verifyIPOASBAFunctionality</p>
             <p class="text-sm">
-              <span>10:21:50 pm</span> / <span>00:00:07:929</span>
+              <span>10:26:50 pm</span> / <span>00:00:06:224</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -106,9 +106,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">verifyIPOASBAFunctionality</h5>
-<span class='badge badge-success'>05.29.2025 10:21:50 pm</span>
-<span class='badge badge-danger'>05.29.2025 10:21:58 pm</span>
-<span class='badge badge-default'>00:00:07:929</span>
+<span class='badge badge-success'>05.29.2025 10:26:50 pm</span>
+<span class='badge badge-danger'>05.29.2025 10:26:56 pm</span>
+<span class='badge badge-default'>00:00:06:224</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -122,33 +122,27 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:50 pm</td>
+        <td>10:26:50 pm</td>
         <td>
           📌 Test Started: verifyIPOASBAFunctionality
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>10:21:58 pm</td>
+        <td>10:26:56 pm</td>
         <td>
           <span class='badge white-text red'>Test FAILED ❌</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>10:21:58 pm</td>
+        <td>10:26:56 pm</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: Test failed due to exception: element click intercepted: Element <a class="menu-item-link transition collapsed" data-toggle="collapse" data-placement="right" data-animation="true" data-container=".vertical-menu-tooltip-place" data-original-title="IPO (ASBA)" id="link4" href="#collapse4">...</a> is not clickable at point (125, 516). Other element would receive the click: <div _ngcontent-c5="" class="overlay ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); position: fixed;">...</div>
-  (Session info: chrome=136.0.7103.114)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25b0f2a3d7b329844e5690cd2d939f9e, clickElement {id=f.3745692529F835691AA10E48D403CD0B.d.20FF49A5D17391068BD47A046E89381F.e.161}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\SAURAV~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52456}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52456/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (25b0f2a3d7b329844e5690cd2d939f9e)] -> xpath: //a[@id='link4' and contains(@href,'#collapse4')]]
-Session ID: 25b0f2a3d7b329844e5690cd2d939f9e
+          <textarea readonly class="code-block">java.lang.AssertionError: Login failed! expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
-	at com.retail_ib.testcase.IPO_ASBA_TC.verifyIPOASBAFunctionality(IPO_ASBA_TC.java:58)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.retail_ib.testcase.IPO_ASBA_TC.verifyIPOASBAFunctionality(IPO_ASBA_TC.java:26)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -181,23 +175,30 @@ Session ID: 25b0f2a3d7b329844e5690cd2d939f9e
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:58 pm</td>
+        <td>10:26:56 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/01_Login_Success_20250529_222156.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/01_Login_Success_20250529_222156.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:58 pm</td>
+        <td>10:26:56 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/06_Logged_Out_20250529_222158.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/06_Logged_Out_20250529_222158.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:58 pm</td>
+        <td>10:26:56 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/99_Final_Error_20250529_222157.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/99_Final_Error_20250529_222157.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:26:56 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/IPO_ASBA_TC/verifyIPOASBAFunctionality_20250529_222158.png' target='_blank'><img src='Screenshots/IPO_ASBA_TC/verifyIPOASBAFunctionality_20250529_222158.png' width='300' height='200'/></a>
         </td>
       </tr>
   </tbody>
@@ -246,7 +247,7 @@ Session ID: 25b0f2a3d7b329844e5690cd2d939f9e
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>22:21:50 pm</td>
+<td>22:26:50 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>verifyIPOASBAFunctionality</a>
 </td>
@@ -295,7 +296,7 @@ Session ID: 25b0f2a3d7b329844e5690cd2d939f9e
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>22:21:50 pm</td>
+<td>22:26:50 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>verifyIPOASBAFunctionality</a>
 </td>
@@ -317,13 +318,13 @@ Session ID: 25b0f2a3d7b329844e5690cd2d939f9e
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>29-05-2025 22:21:45</h3>
+<h3>29-05-2025 22:26:45</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>29-05-2025 22:21:59</h3>
+<h3>29-05-2025 22:26:57</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -376,8 +377,8 @@ Session ID: 25b0f2a3d7b329844e5690cd2d939f9e
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='33%'><b>2</b> events failed,
-<b data-tooltip='%'>4</b> others
+<small data-tooltip='28%'><b>2</b> events failed,
+<b data-tooltip='%'>5</b> others
 </small>
 </div>
 </div>
@@ -393,7 +394,7 @@ Session ID: 25b0f2a3d7b329844e5690cd2d939f9e
 </div></div>
 <script>
 var timeline = {
-"verifyIPOASBAFunctionality":7.929
+"verifyIPOASBAFunctionality":6.224
 };
 </script>
 <div class="row">
@@ -466,7 +467,7 @@ passEvents: 0,
 failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 4
+infoEvents: 5
 };
 </script>        </div>
       </div>
