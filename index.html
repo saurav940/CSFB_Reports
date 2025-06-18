@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Retail Internet Banking Test Suite</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">18-06-2025 16:20:52</span></a>
+<a href="#"><span class="badge badge-primary">18-06-2025 17:29:30</span></a>
 </li>
 </ul>
 </div>
@@ -95,9 +95,9 @@
           tag="RetailBanking"
           device="">
           <div class="test-detail">
-            <p class="name">verifyIMPSFundTransfer</p>
+            <p class="name">verifyNEFTTransfer</p>
             <p class="text-sm">
-              <span>4:20:57 pm</span> / <span>00:01:00:229</span>
+              <span>5:29:36 pm</span> / <span>00:00:05:717</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -105,10 +105,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyIMPSFundTransfer</h5>
-<span class='badge badge-success'>06.18.2025 4:20:57 pm</span>
-<span class='badge badge-danger'>06.18.2025 4:21:58 pm</span>
-<span class='badge badge-default'>00:01:00:229</span>
+<h5 class="test-status text-fail">verifyNEFTTransfer</h5>
+<span class='badge badge-success'>06.18.2025 5:29:36 pm</span>
+<span class='badge badge-danger'>06.18.2025 5:29:42 pm</span>
+<span class='badge badge-default'>00:00:05:717</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -122,25 +122,27 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:20:57 pm</td>
+        <td>5:29:36 pm</td>
         <td>
-          📌 Test Started: verifyIMPSFundTransfer
+          📌 Test Started: verifyNEFTTransfer
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:21:58 pm</td>
+        <td>5:29:42 pm</td>
         <td>
           <span class='badge white-text red'>Test FAILED ❌</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:21:58 pm</td>
+        <td>5:29:42 pm</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: Test Case Failed due to: Transaction failed - success message not displayed within 20 seconds
+          <textarea readonly class="code-block">java.lang.AssertionError: Login failed expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
-	at com.retail_ib.testcase.FT_IMPS_Fund_Transfer_TC.verifyIMPSFundTransfer(FT_IMPS_Fund_Transfer_TC.java:132)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.retail_ib.testcase.FT_NEFT_Transfer_TC.verifyNEFTTransfer(FT_NEFT_Transfer_TC.java:34)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -173,44 +175,9 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:21:58 pm</td>
+        <td>5:29:42 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/FT_IMPS_Fund_Transfer_TC/01_Transfer_Details_Entered_Row_1_20250618_162111.png' target='_blank'><img src='Screenshots/FT_IMPS_Fund_Transfer_TC/01_Transfer_Details_Entered_Row_1_20250618_162111.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:21:58 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/FT_IMPS_Fund_Transfer_TC/02_After_Proceed_Click_Row_1_20250618_162114.png' target='_blank'><img src='Screenshots/FT_IMPS_Fund_Transfer_TC/02_After_Proceed_Click_Row_1_20250618_162114.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:21:58 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/FT_IMPS_Fund_Transfer_TC/05_After_Logout_20250618_162158.png' target='_blank'><img src='Screenshots/FT_IMPS_Fund_Transfer_TC/05_After_Logout_20250618_162158.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:21:58 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/FT_IMPS_Fund_Transfer_TC/99_Final_Error_20250618_162157.png' target='_blank'><img src='Screenshots/FT_IMPS_Fund_Transfer_TC/99_Final_Error_20250618_162157.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:21:58 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/FT_IMPS_Fund_Transfer_TC/Error_Row_1_20250618_162157.png' target='_blank'><img src='Screenshots/FT_IMPS_Fund_Transfer_TC/Error_Row_1_20250618_162157.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:21:58 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/FT_IMPS_Fund_Transfer_TC/Error_Transaction_Failed_Row_1_20250618_162157.png' target='_blank'><img src='Screenshots/FT_IMPS_Fund_Transfer_TC/Error_Transaction_Failed_Row_1_20250618_162157.png' width='300' height='200'/></a>
+          📁 Screenshot folder not found: C:\Users\saurav.kumar\eclipse-workspace\CapBankQA/Screenshots/FT_NEFT_Transfer_TC
         </td>
       </tr>
   </tbody>
@@ -259,9 +226,9 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:20:57 pm</td>
+<td>17:29:36 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>verifyIMPSFundTransfer</a>
+<a href="#" class="linked" test-id='2' id='2'>verifyNEFTTransfer</a>
 </td>
 </tr>
 </tbody>
@@ -308,9 +275,9 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:20:57 pm</td>
+<td>17:29:36 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>verifyIMPSFundTransfer</a>
+<a href="#" class="linked" test-id='2' id='2'>verifyNEFTTransfer</a>
 </td>
 </tr>
 </tbody>
@@ -330,13 +297,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>18-06-2025 16:20:52</h3>
+<h3>18-06-2025 17:29:30</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>18-06-2025 16:21:59</h3>
+<h3>18-06-2025 17:29:42</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -389,8 +356,8 @@
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='22%'><b>2</b> events failed,
-<b data-tooltip='%'>7</b> others
+<small data-tooltip='50%'><b>2</b> events failed,
+<b data-tooltip='%'>2</b> others
 </small>
 </div>
 </div>
@@ -406,7 +373,7 @@
 </div></div>
 <script>
 var timeline = {
-"verifyIMPSFundTransfer":60.229
+"verifyNEFTTransfer":5.717
 };
 </script>
 <div class="row">
@@ -479,7 +446,7 @@ passEvents: 0,
 failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 7
+infoEvents: 2
 };
 </script>        </div>
       </div>
