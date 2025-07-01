@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Retail Internet Banking Test Suite</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">27-06-2025 14:33:35</span></a>
+<a href="#"><span class="badge badge-primary">01-07-2025 10:41:44</span></a>
 </li>
 </ul>
 </div>
@@ -76,6 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
@@ -84,37 +85,37 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">CorporateBanking</a>
+<a class="dropdown-item" href="#">RetailBanking</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="pass" test-id="2"
           author=""
-          tag="CorporateBanking"
+          tag="RetailBanking"
           device="">
           <div class="test-detail">
-            <p class="name">verifyOwnAccountFundTransfer</p>
+            <p class="name">verifyOwnAccountTransfer</p>
             <p class="text-sm">
-              <span>2:33:44 pm</span> / <span>00:00:31:553</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:41:53 am</span> / <span>00:00:55:479</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyOwnAccountFundTransfer</h5>
-<span class='badge badge-success'>06.27.2025 2:33:44 pm</span>
-<span class='badge badge-danger'>06.27.2025 2:34:16 pm</span>
-<span class='badge badge-default'>00:00:31:553</span>
+<h5 class="test-status text-pass">verifyOwnAccountTransfer</h5>
+<span class='badge badge-success'>07.01.2025 10:41:53 am</span>
+<span class='badge badge-danger'>07.01.2025 10:42:48 am</span>
+<span class='badge badge-default'>00:00:55:479</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CorporateBanking</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">RetailBanking</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -122,109 +123,58 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:33:44 pm</td>
+        <td>10:41:53 am</td>
         <td>
-          📌 Test Started: verifyOwnAccountFundTransfer
+          📌 Test Started: verifyOwnAccountTransfer
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:34:16 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:42:48 am</td>
         <td>
-          <span class='badge white-text red'>Test FAILED ❌</span>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:34:16 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (b0ae9cd3922de4bee536187f7d7b9bc3)] -> xpath: //input[@id='tpin']] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\SAURAV~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50097}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50097/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b0ae9cd3922de4bee536187f7d7b9bc3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.Corporate_Banking_Pages.Corporate_FT_Own_Account_Transfer_Page.enterTransactionPassword(Corporate_FT_Own_Account_Transfer_Page.java:108)
-	at com.Corporate_Banking_Testcase.Corporate_FT_Own_Account_Transfer_TC.verifyOwnAccountFundTransfer(Corporate_FT_Own_Account_Transfer_TC.java:49)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</textarea>
-          
+          <span class='badge white-text green'>Test PASSED ✅</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:34:16 pm</td>
+        <td>10:42:48 am</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Corporate_FT_Own_Account_Transfer_TC/Step_1_Login_Completed_20250624_120920.png' target='_blank'><img src='Screenshots/Corporate_FT_Own_Account_Transfer_TC/Step_1_Login_Completed_20250624_120920.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/FT_Own_Account_Transfer_TC/01_After_Login_20250701_104208.png' target='_blank'><img src='Screenshots/FT_Own_Account_Transfer_TC/01_After_Login_20250701_104208.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:34:16 pm</td>
+        <td>10:42:48 am</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Corporate_FT_Own_Account_Transfer_TC/Step_1_Login_Completed_20250627_143351.png' target='_blank'><img src='Screenshots/Corporate_FT_Own_Account_Transfer_TC/Step_1_Login_Completed_20250627_143351.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/FT_Own_Account_Transfer_TC/02_Clicked_Transfer_Menu_20250701_104209.png' target='_blank'><img src='Screenshots/FT_Own_Account_Transfer_TC/02_Clicked_Transfer_Menu_20250701_104209.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:34:16 pm</td>
+        <td>10:42:48 am</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Corporate_FT_Own_Account_Transfer_TC/Step_2_click_Proceed_1_20250624_120924.png' target='_blank'><img src='Screenshots/Corporate_FT_Own_Account_Transfer_TC/Step_2_click_Proceed_1_20250624_120924.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/FT_Own_Account_Transfer_TC/04_After_Proceed_Clicked_20250701_104242.png' target='_blank'><img src='Screenshots/FT_Own_Account_Transfer_TC/04_After_Proceed_Clicked_20250701_104242.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:34:16 pm</td>
+        <td>10:42:48 am</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Corporate_FT_Own_Account_Transfer_TC/Step_2_click_Proceed_1_20250627_143355.png' target='_blank'><img src='Screenshots/Corporate_FT_Own_Account_Transfer_TC/Step_2_click_Proceed_1_20250627_143355.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/FT_Own_Account_Transfer_TC/05_Confirm_Clicked_20250701_104243.png' target='_blank'><img src='Screenshots/FT_Own_Account_Transfer_TC/05_Confirm_Clicked_20250701_104243.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:34:16 pm</td>
+        <td>10:42:48 am</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Corporate_FT_Own_Account_Transfer_TC/Step_4_Error_State_20250624_120945.png' target='_blank'><img src='Screenshots/Corporate_FT_Own_Account_Transfer_TC/Step_4_Error_State_20250624_120945.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/FT_Own_Account_Transfer_TC/06_Transfer_Successful_20250701_104247.png' target='_blank'><img src='Screenshots/FT_Own_Account_Transfer_TC/06_Transfer_Successful_20250701_104247.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:34:16 pm</td>
+        <td>10:42:48 am</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Corporate_FT_Own_Account_Transfer_TC/Step_4_Error_State_20250627_143416.png' target='_blank'><img src='Screenshots/Corporate_FT_Own_Account_Transfer_TC/Step_4_Error_State_20250627_143416.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:34:16 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Corporate_FT_Own_Account_Transfer_TC/verifyOwnAccountFundTransfer_20250624_120945.png' target='_blank'><img src='Screenshots/Corporate_FT_Own_Account_Transfer_TC/verifyOwnAccountFundTransfer_20250624_120945.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/FT_Own_Account_Transfer_TC/07_Logged_Out_20250701_104248.png' target='_blank'><img src='Screenshots/FT_Own_Account_Transfer_TC/07_Logged_Out_20250701_104248.png' width='300' height='200'/></a>
         </td>
       </tr>
   </tbody>
@@ -234,12 +184,12 @@ Session ID: b0ae9cd3922de4bee536187f7d7b9bc3
         </li>
         <li class="test-item"  status="fail" test-id="4"
           author=""
-          tag="CorporateBanking"
+          tag="RetailBanking"
           device="">
           <div class="test-detail">
-            <p class="name">verifyWithinBankFundTransfer</p>
+            <p class="name">verifyWithinBankTransfer</p>
             <p class="text-sm">
-              <span>2:34:21 pm</span> / <span>00:00:01:582</span>
+              <span>10:42:53 am</span> / <span>00:00:01:271</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -247,16 +197,16 @@ Session ID: b0ae9cd3922de4bee536187f7d7b9bc3
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyWithinBankFundTransfer</h5>
-<span class='badge badge-success'>06.27.2025 2:34:21 pm</span>
-<span class='badge badge-danger'>06.27.2025 2:34:22 pm</span>
-<span class='badge badge-default'>00:00:01:582</span>
+<h5 class="test-status text-fail">verifyWithinBankTransfer</h5>
+<span class='badge badge-success'>07.01.2025 10:42:53 am</span>
+<span class='badge badge-danger'>07.01.2025 10:42:54 am</span>
+<span class='badge badge-default'>00:00:01:271</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CorporateBanking</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">RetailBanking</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -264,33 +214,27 @@ Session ID: b0ae9cd3922de4bee536187f7d7b9bc3
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:34:21 pm</td>
+        <td>10:42:53 am</td>
         <td>
-          📌 Test Started: verifyWithinBankFundTransfer
+          📌 Test Started: verifyWithinBankTransfer
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:34:22 pm</td>
+        <td>10:42:54 am</td>
         <td>
           <span class='badge white-text red'>Test FAILED ❌</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:34:22 pm</td>
+        <td>10:42:54 am</td>
         <td>
-          <textarea readonly class="code-block">java.lang.RuntimeException: Login process failed. element click intercepted: Element <button class="btn indexbtn" tabindex="3" type="button">...</button> is not clickable at point (767, 267). Other element would receive the click: <img class="p-0  text-center sizelogoone  col-sm-10" src="https://uat.capitalbank.in/ReachIB/getimages?img=20181129003.jpeg">
-  (Session info: chrome=137.0.7151.120)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b000f04a788312228e3aac7f70bee39e, clickElement {id=f.8CDD4D1A32EC883BF5818A6B7AC888C2.d.8269F908EA996FD90761740A4D33385A.e.3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\SAURAV~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50128/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b000f04a788312228e3aac7f70bee39e)] -> xpath: (//button[normalize-space()='Continue to Login'])[1]]
-Session ID: b000f04a788312228e3aac7f70bee39e
-	at com.retail_ib.utility.CorporateLoginUtility.performCorporateLogin(CorporateLoginUtility.java:33)
-	at com.Corporate_Banking_Testcase.Corporate_FT_Within_Bank_Transfer_TC.verifyWithinBankFundTransfer(Corporate_FT_Within_Bank_Transfer_TC.java:23)
+          <textarea readonly class="code-block">java.lang.AssertionError: Login failed! Dashboard URL not reached. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.retail_ib.testcase.FT_Within_Bank_Transfer_TC.verifyWithinBankTransfer(FT_Within_Bank_Transfer_TC.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -301,7 +245,7 @@ Session ID: b000f04a788312228e3aac7f70bee39e
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:739)
 	at org.testng.TestRunner.run(TestRunner.java:614)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -323,23 +267,9 @@ Session ID: b000f04a788312228e3aac7f70bee39e
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:34:22 pm</td>
+        <td>10:42:54 am</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Corporate_FT_Within_Bank_Transfer_TC/Step_6_Error_State_20250624_120950.png' target='_blank'><img src='Screenshots/Corporate_FT_Within_Bank_Transfer_TC/Step_6_Error_State_20250624_120950.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:34:22 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Corporate_FT_Within_Bank_Transfer_TC/Step_6_Error_State_20250627_143422.png' target='_blank'><img src='Screenshots/Corporate_FT_Within_Bank_Transfer_TC/Step_6_Error_State_20250627_143422.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:34:22 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Corporate_FT_Within_Bank_Transfer_TC/verifyWithinBankFundTransfer_20250624_120951.png' target='_blank'><img src='Screenshots/Corporate_FT_Within_Bank_Transfer_TC/verifyWithinBankFundTransfer_20250624_120951.png' width='300' height='200'/></a>
+          📁 Screenshot folder not found: C:\Users\saurav.kumar\eclipse-workspace\CapBankQA/Screenshots/FT_Within_Bank_Transfer_TC
         </td>
       </tr>
   </tbody>
@@ -360,7 +290,7 @@ Session ID: b000f04a788312228e3aac7f70bee39e
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -369,12 +299,12 @@ Session ID: b000f04a788312228e3aac7f70bee39e
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="name">java.lang.AssertionError</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.TimeoutException</h4>
+<h4>java.lang.AssertionError</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -388,42 +318,9 @@ Session ID: b000f04a788312228e3aac7f70bee39e
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:33:44 pm</td>
+<td>10:42:53 am</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>verifyOwnAccountFundTransfer</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">java.lang.RuntimeException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.RuntimeException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>14:34:21 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>verifyWithinBankFundTransfer</a>
+<a href="#" class="linked" test-id='4' id='4'>verifyWithinBankTransfer</a>
 </td>
 </tr>
 </tbody>
@@ -449,15 +346,17 @@ Session ID: b000f04a788312228e3aac7f70bee39e
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">CorporateBanking</p>
+<p class="name">RetailBanking</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>CorporateBanking</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<h4>RetailBanking</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -468,18 +367,18 @@ Session ID: b000f04a788312228e3aac7f70bee39e
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>14:33:44 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:41:53 am</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>verifyOwnAccountFundTransfer</a>
+<a href="#" class="linked" test-id='2' id='2'>verifyOwnAccountTransfer</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>14:34:21 pm</td>
+<td>10:42:53 am</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>verifyWithinBankFundTransfer</a>
+<a href="#" class="linked" test-id='4' id='4'>verifyWithinBankTransfer</a>
 </td>
 </tr>
 </tbody>
@@ -499,25 +398,25 @@ Session ID: b000f04a788312228e3aac7f70bee39e
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>27-06-2025 14:33:35</h3>
+<h3>01-07-2025 10:41:44</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>27-06-2025 14:34:23</h3>
+<h3>01-07-2025 10:42:56</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>2</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -533,12 +432,12 @@ Session ID: b000f04a788312228e3aac7f70bee39e
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='50%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>2</b> tests failed,
+<small data-tooltip='50%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -556,10 +455,10 @@ Session ID: b000f04a788312228e3aac7f70bee39e
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='8%'><b>1</b> events passed</small></div>
 <div>
-<small data-tooltip='25%'><b>4</b> events failed,
-<b data-tooltip='%'>12</b> others
+<small data-tooltip='16%'><b>2</b> events failed,
+<b data-tooltip='%'>9</b> others
 </small>
 </div>
 </div>
@@ -575,7 +474,7 @@ Session ID: b000f04a788312228e3aac7f70bee39e
 </div></div>
 <script>
 var timeline = {
-"verifyOwnAccountFundTransfer":31.553,"verifyWithinBankFundTransfer":1.582
+"verifyOwnAccountTransfer":55.479,"verifyWithinBankTransfer":1.271
 };
 </script>
 <div class="row">
@@ -585,12 +484,12 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>CorporateBanking</td>
+<td>RetailBanking</td>
+<td>1</td>
+<td>1</td>
 <td>0</td>
-<td>2</td>
 <td>0</td>
-<td>0</td>
-<td>0%</td>
+<td>50%</td>
 </tr>
 </tbody>
 </table></div>
@@ -612,7 +511,7 @@ var timeline = {
 </tr>
 <tr>
 <td>Java</td>
-<td>23.0.1</td>
+<td>21.0.6</td>
 </tr>
 <tr>
 <td>Environment</td>
@@ -627,8 +526,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 2,
+passParent: 1,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -644,11 +543,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 4,
+passEvents: 1,
+failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 12
+infoEvents: 9
 };
 </script>        </div>
       </div>
