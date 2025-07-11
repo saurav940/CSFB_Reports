@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Retail Internet Banking Test Suite</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">11-07-2025 16:45:12</span></a>
+<a href="#"><span class="badge badge-primary">11-07-2025 16:49:07</span></a>
 </li>
 </ul>
 </div>
@@ -97,7 +97,7 @@
           <div class="test-detail">
             <p class="name">verifyDirectTaxPayment</p>
             <p class="text-sm">
-              <span>4:45:16 pm</span> / <span>00:00:31:210</span>
+              <span>4:49:10 pm</span> / <span>00:00:10:803</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -106,9 +106,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">verifyDirectTaxPayment</h5>
-<span class='badge badge-success'>07.11.2025 4:45:16 pm</span>
-<span class='badge badge-danger'>07.11.2025 4:45:47 pm</span>
-<span class='badge badge-default'>00:00:31:210</span>
+<span class='badge badge-success'>07.11.2025 4:49:10 pm</span>
+<span class='badge badge-danger'>07.11.2025 4:49:21 pm</span>
+<span class='badge badge-default'>00:00:10:803</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -122,44 +122,27 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:16 pm</td>
+        <td>4:49:10 pm</td>
         <td>
           📌 Test Started: verifyDirectTaxPayment
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:45:47 pm</td>
+        <td>4:49:21 pm</td>
         <td>
           <span class='badge white-text red'>Test FAILED ❌</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:45:47 pm</td>
+        <td>4:49:21 pm</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d3ab4e9e0bda26572512fc637e311bd1, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\SAURAV~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58049}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58049/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d3ab4e9e0bda26572512fc637e311bd1
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
-	at com.retail_ib.pages.BaseTest.captureScreenShot(BaseTest.java:96)
-	at com.retail_ib.testcase.Direct_Tax_TC.verifyDirectTaxPayment(Direct_Tax_TC.java:37)
+          <textarea readonly class="code-block">java.lang.AssertionError: Login failed! Dashboard URL not reached. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.retail_ib.testcase.Direct_Tax_TC.verifyDirectTaxPayment(Direct_Tax_TC.java:28)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -192,422 +175,9 @@ Session ID: d3ab4e9e0bda26572512fc637e311bd1
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
+        <td>4:49:21 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_After_Login_20250711_143700.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_After_Login_20250711_143700.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_After_Login_20250711_143752.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_After_Login_20250711_143752.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_After_Login_20250711_143911.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_After_Login_20250711_143911.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_After_Login_20250711_144533.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_After_Login_20250711_144533.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_After_Login_20250711_160826.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_After_Login_20250711_160826.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_After_Login_20250711_160917.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_After_Login_20250711_160917.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_After_Login_20250711_164525.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_After_Login_20250711_164525.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_143703.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_143703.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_143755.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_143755.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_143914.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_143914.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_144536.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_144536.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_160829.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_160829.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_160920.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_160920.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_164527.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250711_164527.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_143705.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_143705.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_143757.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_143757.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_143926.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_143926.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_144547.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_144547.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_160838.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_160838.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_160930.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_160930.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_164538.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_2_20250711_164538.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_3_20250711_143727.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_3_20250711_143727.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_3_20250711_143819.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_3_20250711_143819.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_3_20250711_143948.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_3_20250711_143948.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_3_20250711_144609.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_3_20250711_144609.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_143703.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_143703.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_143755.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_143755.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_143914.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_143914.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_144536.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_144536.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_160829.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_160829.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_160921.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_160921.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_164528.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250711_164528.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/03_Form_Filled_Row_1_20250711_143923.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/03_Form_Filled_Row_1_20250711_143923.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/03_Form_Filled_Row_1_20250711_144543.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/03_Form_Filled_Row_1_20250711_144543.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/03_Form_Filled_Row_1_20250711_160837.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/03_Form_Filled_Row_1_20250711_160837.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/03_Form_Filled_Row_1_20250711_160928.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/03_Form_Filled_Row_1_20250711_160928.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/03_Form_Filled_Row_1_20250711_164537.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/03_Form_Filled_Row_1_20250711_164537.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/04_Proceed_Clicked_Row_1_20250711_143925.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/04_Proceed_Clicked_Row_1_20250711_143925.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/04_Proceed_Clicked_Row_1_20250711_144546.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/04_Proceed_Clicked_Row_1_20250711_144546.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/99_After_Logout_20250711_143841.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/99_After_Logout_20250711_143841.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/99_After_Logout_20250711_144011.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/99_After_Logout_20250711_144011.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/99_After_Logout_20250711_144631.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/99_After_Logout_20250711_144631.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_143704.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_143704.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_143756.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_143756.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_143925.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_143925.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_144546.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_144546.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_160837.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_160837.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_160929.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_160929.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_164537.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250711_164537.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_2_20250711_143725.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_2_20250711_143725.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_2_20250711_143818.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_2_20250711_143818.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_2_20250711_143947.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_2_20250711_143947.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_2_20250711_144608.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_2_20250711_144608.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_2_20250711_160859.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_2_20250711_160859.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_2_20250711_160950.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_2_20250711_160950.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_3_20250711_143840.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_3_20250711_143840.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_3_20250711_144009.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_3_20250711_144009.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_3_20250711_144629.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_3_20250711_144629.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_3_20250711_160920.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_3_20250711_160920.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:45:47 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_3_20250711_161012.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_3_20250711_161012.png' width='300' height='200'/></a>
+          📁 Screenshot folder not found: C:\Users\saurav.kumar\eclipse-workspace\CapBankQA/Screenshots/Direct_Tax_TC
         </td>
       </tr>
   </tbody>
@@ -637,12 +207,12 @@ Session ID: d3ab4e9e0bda26572512fc637e311bd1
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.NoSuchSessionException</p>
+<p class="name">java.lang.AssertionError</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.NoSuchSessionException</h4>
+<h4>java.lang.AssertionError</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -656,7 +226,7 @@ Session ID: d3ab4e9e0bda26572512fc637e311bd1
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:45:16 pm</td>
+<td>16:49:10 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>verifyDirectTaxPayment</a>
 </td>
@@ -705,7 +275,7 @@ Session ID: d3ab4e9e0bda26572512fc637e311bd1
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:45:16 pm</td>
+<td>16:49:10 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>verifyDirectTaxPayment</a>
 </td>
@@ -727,13 +297,13 @@ Session ID: d3ab4e9e0bda26572512fc637e311bd1
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>11-07-2025 16:45:12</h3>
+<h3>11-07-2025 16:49:07</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>11-07-2025 16:45:48</h3>
+<h3>11-07-2025 16:49:22</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -786,8 +356,8 @@ Session ID: d3ab4e9e0bda26572512fc637e311bd1
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='3%'><b>2</b> events failed,
-<b data-tooltip='%'>61</b> others
+<small data-tooltip='50%'><b>2</b> events failed,
+<b data-tooltip='%'>2</b> others
 </small>
 </div>
 </div>
@@ -803,7 +373,7 @@ Session ID: d3ab4e9e0bda26572512fc637e311bd1
 </div></div>
 <script>
 var timeline = {
-"verifyDirectTaxPayment":31.21
+"verifyDirectTaxPayment":10.803
 };
 </script>
 <div class="row">
@@ -876,7 +446,7 @@ passEvents: 0,
 failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 61
+infoEvents: 2
 };
 </script>        </div>
       </div>
