@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Retail Internet Banking Test Suite</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">04-08-2025 13:29:11</span></a>
+<a href="#"><span class="badge badge-primary">04-08-2025 14:14:36</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -71,7 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -85,25 +90,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag="RetailBanking"
           device="">
           <div class="test-detail">
-            <p class="name">LoadBalanceEnquiry_AutoDropdownCycle</p>
+            <p class="name">verifyDirectTaxPayment</p>
             <p class="text-sm">
-              <span>1:29:15 pm</span> / <span>00:07:47:193</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>2:14:40 pm</span> / <span>00:03:20:588</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">LoadBalanceEnquiry_AutoDropdownCycle</h5>
-<span class='badge badge-success'>08.04.2025 1:29:15 pm</span>
-<span class='badge badge-danger'>08.04.2025 1:37:02 pm</span>
-<span class='badge badge-default'>00:07:47:193</span>
+<h5 class="test-status text-fail">verifyDirectTaxPayment</h5>
+<span class='badge badge-success'>08.04.2025 2:14:40 pm</span>
+<span class='badge badge-danger'>08.04.2025 2:18:01 pm</span>
+<span class='badge badge-default'>00:03:20:588</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -117,1451 +122,137 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:29:15 pm</td>
+        <td>2:14:40 pm</td>
         <td>
-          📌 Test Started: LoadBalanceEnquiry_AutoDropdownCycle
+          📌 Test Started: verifyDirectTaxPayment
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:37:02 pm</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:18:01 pm</td>
         <td>
-          <span class='badge white-text green'>Test PASSED ✅</span>
+          <span class='badge white-text red'>Test FAILED ❌</span>
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250801_154555.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250801_154555.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250801_155055.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250801_155055.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250803_224703.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250803_224703.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_104804.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_104804.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_114049.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_114049.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_125551.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_125551.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_131038.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_131038.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_132924.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_132924.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Initial_Fetch_20250804_131041.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Initial_Fetch_20250804_131041.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter01_20250804_125554.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter01_20250804_125554.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter02_20250804_125557.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter02_20250804_125557.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter03_20250804_125559.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter03_20250804_125559.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter04_20250804_125602.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter04_20250804_125602.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter05_20250804_125605.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter05_20250804_125605.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter06_20250804_125608.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter06_20250804_125608.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter07_20250804_125611.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter07_20250804_125611.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter08_20250804_125614.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter08_20250804_125614.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter09_20250804_125617.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter09_20250804_125617.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter10_20250804_125620.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter10_20250804_125620.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Reload01_20250804_131042.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Reload01_20250804_131042.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Reload02_20250804_131044.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Reload02_20250804_131044.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Reload03_20250804_131045.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Reload03_20250804_131045.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Reload04_20250804_131047.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Reload04_20250804_131047.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Reload05_20250804_131048.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Reload05_20250804_131048.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Reload06_20250804_131050.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Reload06_20250804_131050.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Reload07_20250804_131051.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Reload07_20250804_131051.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Reload08_20250804_131053.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Reload08_20250804_131053.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Reload09_20250804_131054.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Reload09_20250804_131054.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Reload10_20250804_131056.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Reload10_20250804_131056.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_10_InitialBalance_20250804_133158.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_10_InitialBalance_20250804_133158.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_10_20250804_133213.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_10_20250804_133213.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_1_20250804_133200.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_1_20250804_133200.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_2_20250804_133201.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_2_20250804_133201.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_3_20250804_133203.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_3_20250804_133203.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_4_20250804_133204.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_4_20250804_133204.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_5_20250804_133206.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_5_20250804_133206.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_6_20250804_133207.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_6_20250804_133207.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_7_20250804_133209.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_7_20250804_133209.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_8_20250804_133210.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_8_20250804_133210.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_9_20250804_133212.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_10_Reload_9_20250804_133212.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_10_Selected_20250804_133158.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_10_Selected_20250804_133158.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_11_InitialBalance_20250804_133215.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_11_InitialBalance_20250804_133215.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_10_20250804_133230.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_10_20250804_133230.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_1_20250804_133216.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_1_20250804_133216.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_2_20250804_133218.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_2_20250804_133218.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_3_20250804_133219.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_3_20250804_133219.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_4_20250804_133221.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_4_20250804_133221.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_5_20250804_133222.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_5_20250804_133222.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_6_20250804_133224.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_6_20250804_133224.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_7_20250804_133225.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_7_20250804_133225.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_8_20250804_133227.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_8_20250804_133227.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_9_20250804_133228.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_11_Reload_9_20250804_133228.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_11_Selected_20250804_133215.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_11_Selected_20250804_133215.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_12_InitialBalance_20250804_133232.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_12_InitialBalance_20250804_133232.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_10_20250804_133700.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_10_20250804_133700.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_1_20250804_133233.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_1_20250804_133233.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_2_20250804_133250.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_2_20250804_133250.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_3_20250804_133321.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_3_20250804_133321.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_4_20250804_133353.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_4_20250804_133353.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_5_20250804_133424.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_5_20250804_133424.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_6_20250804_133455.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_6_20250804_133455.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_7_20250804_133526.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_7_20250804_133526.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_8_20250804_133557.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_8_20250804_133557.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_9_20250804_133629.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_12_Reload_9_20250804_133629.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_12_Selected_20250804_133232.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_12_Selected_20250804_133232.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_1_InitialBalance_20250804_132927.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_1_InitialBalance_20250804_132927.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_10_20250804_132942.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_10_20250804_132942.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_1_20250804_132929.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_1_20250804_132929.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_2_20250804_132930.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_2_20250804_132930.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_3_20250804_132931.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_3_20250804_132931.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_4_20250804_132933.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_4_20250804_132933.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_5_20250804_132934.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_5_20250804_132934.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_6_20250804_132936.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_6_20250804_132936.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_7_20250804_132937.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_7_20250804_132937.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_8_20250804_132939.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_8_20250804_132939.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_9_20250804_132940.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_1_Reload_9_20250804_132940.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_1_Selected_20250804_132927.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_1_Selected_20250804_132927.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_2_InitialBalance_20250804_132945.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_2_InitialBalance_20250804_132945.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_10_20250804_132959.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_10_20250804_132959.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_1_20250804_132946.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_1_20250804_132946.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_2_20250804_132947.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_2_20250804_132947.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_3_20250804_132949.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_3_20250804_132949.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_4_20250804_132951.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_4_20250804_132951.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_5_20250804_132952.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_5_20250804_132952.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_6_20250804_132953.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_6_20250804_132953.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_7_20250804_132955.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_7_20250804_132955.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_8_20250804_132956.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_8_20250804_132956.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_9_20250804_132958.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_2_Reload_9_20250804_132958.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_2_Selected_20250804_132944.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_2_Selected_20250804_132944.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_3_InitialBalance_20250804_133001.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_3_InitialBalance_20250804_133001.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_10_20250804_133016.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_10_20250804_133016.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_1_20250804_133003.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_1_20250804_133003.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_2_20250804_133004.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_2_20250804_133004.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_3_20250804_133006.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_3_20250804_133006.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_4_20250804_133007.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_4_20250804_133007.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_5_20250804_133008.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_5_20250804_133008.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_6_20250804_133010.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_6_20250804_133010.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_7_20250804_133011.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_7_20250804_133011.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_8_20250804_133013.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_8_20250804_133013.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_9_20250804_133014.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_3_Reload_9_20250804_133014.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_3_Selected_20250804_133001.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_3_Selected_20250804_133001.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_4_InitialBalance_20250804_133018.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_4_InitialBalance_20250804_133018.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_10_20250804_133032.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_10_20250804_133032.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_1_20250804_133020.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_1_20250804_133020.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_2_20250804_133021.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_2_20250804_133021.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_3_20250804_133022.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_3_20250804_133022.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_4_20250804_133024.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_4_20250804_133024.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_5_20250804_133025.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_5_20250804_133025.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_6_20250804_133027.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_6_20250804_133027.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_7_20250804_133028.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_7_20250804_133028.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_8_20250804_133029.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_8_20250804_133029.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_9_20250804_133031.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_4_Reload_9_20250804_133031.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_4_Selected_20250804_133018.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_4_Selected_20250804_133018.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_5_InitialBalance_20250804_133035.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_5_InitialBalance_20250804_133035.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_10_20250804_133049.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_10_20250804_133049.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_1_20250804_133036.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_1_20250804_133036.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_2_20250804_133038.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_2_20250804_133038.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_3_20250804_133039.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_3_20250804_133039.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_4_20250804_133040.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_4_20250804_133040.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_5_20250804_133042.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_5_20250804_133042.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_6_20250804_133043.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_6_20250804_133043.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_7_20250804_133045.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_7_20250804_133045.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_8_20250804_133046.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_8_20250804_133046.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_9_20250804_133048.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_5_Reload_9_20250804_133048.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_5_Selected_20250804_133034.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_5_Selected_20250804_133034.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_6_InitialBalance_20250804_133051.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_6_InitialBalance_20250804_133051.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_10_20250804_133106.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_10_20250804_133106.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_1_20250804_133053.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_1_20250804_133053.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_2_20250804_133054.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_2_20250804_133054.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_3_20250804_133056.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_3_20250804_133056.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_4_20250804_133057.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_4_20250804_133057.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_5_20250804_133059.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_5_20250804_133059.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_6_20250804_133100.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_6_20250804_133100.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_7_20250804_133101.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_7_20250804_133101.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_8_20250804_133103.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_8_20250804_133103.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_9_20250804_133104.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_6_Reload_9_20250804_133104.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_6_Selected_20250804_133051.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_6_Selected_20250804_133051.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_7_InitialBalance_20250804_133108.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_7_InitialBalance_20250804_133108.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_10_20250804_133122.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_10_20250804_133122.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_1_20250804_133110.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_1_20250804_133110.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_2_20250804_133111.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_2_20250804_133111.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_3_20250804_133112.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_3_20250804_133112.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_4_20250804_133114.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_4_20250804_133114.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_5_20250804_133115.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_5_20250804_133115.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_6_20250804_133116.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_6_20250804_133116.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_7_20250804_133118.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_7_20250804_133118.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_8_20250804_133119.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_8_20250804_133119.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_9_20250804_133121.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_7_Reload_9_20250804_133121.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_7_Selected_20250804_133108.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_7_Selected_20250804_133108.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_8_InitialBalance_20250804_133125.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_8_InitialBalance_20250804_133125.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_10_20250804_133139.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_10_20250804_133139.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_1_20250804_133126.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_1_20250804_133126.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_2_20250804_133127.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_2_20250804_133127.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_3_20250804_133129.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_3_20250804_133129.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_4_20250804_133130.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_4_20250804_133130.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_5_20250804_133132.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_5_20250804_133132.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_6_20250804_133133.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_6_20250804_133133.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_7_20250804_133135.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_7_20250804_133135.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_8_20250804_133136.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_8_20250804_133136.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_9_20250804_133138.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_8_Reload_9_20250804_133138.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_8_Selected_20250804_133124.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_8_Selected_20250804_133124.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_9_InitialBalance_20250804_133142.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_9_InitialBalance_20250804_133142.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_10_20250804_133156.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_10_20250804_133156.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_1_20250804_133143.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_1_20250804_133143.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_2_20250804_133144.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_2_20250804_133144.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_3_20250804_133146.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_3_20250804_133146.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_4_20250804_133147.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_4_20250804_133147.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_5_20250804_133149.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_5_20250804_133149.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_6_20250804_133150.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_6_20250804_133150.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_7_20250804_133152.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_7_20250804_133152.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_8_20250804_133153.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_8_20250804_133153.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_9_20250804_133155.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_9_Reload_9_20250804_133155.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account_9_Selected_20250804_133141.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account_9_Selected_20250804_133141.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_001_20250804_104823.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_001_20250804_104823.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_001_20250804_114108.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_001_20250804_114108.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_002_20250804_104840.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_002_20250804_104840.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_002_20250804_114126.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_002_20250804_114126.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_003_20250804_104858.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_003_20250804_104858.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_003_20250804_114143.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_003_20250804_114143.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_004_20250804_104915.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_004_20250804_104915.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_004_20250804_114201.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_004_20250804_114201.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_005_20250804_104933.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_005_20250804_104933.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_006_20250804_104950.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_006_20250804_104950.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_007_20250804_105008.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_007_20250804_105008.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_008_20250804_105026.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_008_20250804_105026.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_009_20250804_105044.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_009_20250804_105044.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_010_20250804_105102.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_010_20250804_105102.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_011_20250804_105120.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_011_20250804_105120.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_012_20250804_105137.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_012_20250804_105137.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_013_20250804_105155.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_013_20250804_105155.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_014_20250804_105213.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_014_20250804_105213.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
-        <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_015_20250804_105231.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_015_20250804_105231.png' width='300' height='200'/></a>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:18:01 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_016_20250804_105249.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_016_20250804_105249.png' width='300' height='200'/></a>
+          <textarea readonly class="code-block">java.lang.AssertionError: ❌ Test failed due to exception: ❌ Failed to click Tax Applicable Dropdown after 3 attempts
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.retail_ib.testcase.Direct_Tax_TC.verifyDirectTaxPayment(Direct_Tax_TC.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
+        <td>2:18:01 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_017_20250804_105306.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_017_20250804_105306.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_After_Login_20250801_164433.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_After_Login_20250801_164433.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
+        <td>2:18:01 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_018_20250804_105324.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_018_20250804_105324.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_After_Login_20250804_141447.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_After_Login_20250804_141447.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
+        <td>2:18:01 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_019_20250804_105342.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_019_20250804_105342.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250801_164435.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250801_164435.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
+        <td>2:18:01 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_020_20250804_105400.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_020_20250804_105400.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250804_141449.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/01_Menu_Clicked_Row_1_20250804_141449.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
+        <td>2:18:01 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_021_20250804_105418.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_021_20250804_105418.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250801_164436.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250801_164436.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
+        <td>2:18:01 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_022_20250804_105435.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_022_20250804_105435.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250804_141450.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/02_Pay_Clicked_Row_1_20250804_141450.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
+        <td>2:18:01 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_100Times_20250801_154630.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_100Times_20250801_154630.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/99_After_Logout_20250801_164618.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/99_After_Logout_20250801_164618.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
+        <td>2:18:01 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_100Times_20250801_155129.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_100Times_20250801_155129.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Final_State_20250801_164615.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Final_State_20250801_164615.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
+        <td>2:18:01 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_100Times_20250803_224737.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_100Times_20250803_224737.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Final_State_20250804_141627.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Final_State_20250804_141627.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
+        <td>2:18:01 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_MultiAccount_MultiFetch_20250804_125637.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_MultiAccount_MultiFetch_20250804_125637.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250801_164615.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250801_164615.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
+        <td>2:18:01 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_MultiAccount_MultiFetch_20250804_131114.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_MultiAccount_MultiFetch_20250804_131114.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250804_141627.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/ERROR_Row_1_20250804_141627.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>1:37:02 pm</td>
+        <td>2:18:01 pm</td>
         <td>
-          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Logout_20250804_133702.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Logout_20250804_133702.png' width='300' height='200'/></a>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Direct_Tax_TC/FAILURE_verifyDirectTaxPayment_20250801_164618.png' target='_blank'><img src='Screenshots/Direct_Tax_TC/FAILURE_verifyDirectTaxPayment_20250801_164618.png' width='300' height='200'/></a>
         </td>
       </tr>
   </tbody>
@@ -1578,10 +269,10 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
 <ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
@@ -1589,15 +280,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">RetailBanking</p>
+<p class="name">java.lang.AssertionError</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>RetailBanking</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1608,11 +299,60 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:29:15 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:14:40 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>LoadBalanceEnquiry_AutoDropdownCycle</a>
+<a href="#" class="linked" test-id='2' id='2'>verifyDirectTaxPayment</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">RetailBanking</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>RetailBanking</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:14:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>verifyDirectTaxPayment</a>
 </td>
 </tr>
 </tbody>
@@ -1632,25 +372,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>04-08-2025 13:29:11</h3>
+<h3>04-08-2025 14:14:36</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>04-08-2025 13:37:04</h3>
+<h3>04-08-2025 14:18:03</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -1666,12 +406,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> tests passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='100%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -1689,10 +429,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>1</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>206</b> others
+<small data-tooltip='13%'><b>2</b> events failed,
+<b data-tooltip='%'>13</b> others
 </small>
 </div>
 </div>
@@ -1708,7 +448,7 @@
 </div></div>
 <script>
 var timeline = {
-"LoadBalanceEnquiry_AutoDropdownCycle":467.193
+"verifyDirectTaxPayment":200.588
 };
 </script>
 <div class="row">
@@ -1719,11 +459,11 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>RetailBanking</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -1760,8 +500,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -1777,11 +517,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 1,
-failEvents: 0,
+passEvents: 0,
+failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 206
+infoEvents: 13
 };
 </script>        </div>
       </div>
