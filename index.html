@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Retail Internet Banking Test Suite</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">03-08-2025 22:46:50</span></a>
+<a href="#"><span class="badge badge-primary">04-08-2025 12:55:38</span></a>
 </li>
 </ul>
 </div>
@@ -95,9 +95,9 @@
           tag="RetailBanking"
           device="">
           <div class="test-detail">
-            <p class="name">LoadBalanceEnquiry_100Times</p>
+            <p class="name">LoadBalanceEnquiry_MultiAccount_MultiFetch</p>
             <p class="text-sm">
-              <span>10:46:53 pm</span> / <span>00:00:43:252</span>
+              <span>12:55:42 pm</span> / <span>00:00:54:839</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -105,10 +105,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">LoadBalanceEnquiry_100Times</h5>
-<span class='badge badge-success'>08.03.2025 10:46:53 pm</span>
-<span class='badge badge-danger'>08.03.2025 10:47:37 pm</span>
-<span class='badge badge-default'>00:00:43:252</span>
+<h5 class="test-status text-fail">LoadBalanceEnquiry_MultiAccount_MultiFetch</h5>
+<span class='badge badge-success'>08.04.2025 12:55:42 pm</span>
+<span class='badge badge-danger'>08.04.2025 12:56:37 pm</span>
+<span class='badge badge-default'>00:00:54:839</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -122,26 +122,30 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:46:53 pm</td>
+        <td>12:55:42 pm</td>
         <td>
-          📌 Test Started: LoadBalanceEnquiry_100Times
+          📌 Test Started: LoadBalanceEnquiry_MultiAccount_MultiFetch
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>10:47:37 pm</td>
+        <td>12:56:37 pm</td>
         <td>
           <span class='badge white-text red'>Test FAILED ❌</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>10:47:37 pm</td>
+        <td>12:56:37 pm</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: [#1]  Balance is null or not visible expected object to not be null
+          <textarea readonly class="code-block">java.lang.AssertionError: Exception in test: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class='menu-title' and normalize-space()='Own Account Transfer'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\SAURAV~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53068/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c1dc4e01de44c9b8b0a0078356c7d57c
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.assertNotNull(Assert.java:1484)
-	at com.retail_ib.testcase.Load_Balance_Enquery_TC.LoadBalanceEnquiry_100Times(Load_Balance_Enquery_TC.java:50)
+	at com.retail_ib.testcase.Load_Balance_Enquery_TC.LoadBalanceEnquiry_MultiAccount_MultiFetch(Load_Balance_Enquery_TC.java:83)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -174,37 +178,317 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:47:37 pm</td>
+        <td>12:56:37 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250801_154555.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250801_154555.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:47:37 pm</td>
+        <td>12:56:37 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250801_155055.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250801_155055.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:47:37 pm</td>
+        <td>12:56:37 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250803_224703.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250803_224703.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:47:37 pm</td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_104804.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_104804.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_114049.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_114049.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_125551.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/01_After_Login_20250804_125551.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter01_20250804_125554.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter01_20250804_125554.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter02_20250804_125557.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter02_20250804_125557.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter03_20250804_125559.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter03_20250804_125559.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter04_20250804_125602.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter04_20250804_125602.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter05_20250804_125605.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter05_20250804_125605.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter06_20250804_125608.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter06_20250804_125608.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter07_20250804_125611.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter07_20250804_125611.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter08_20250804_125614.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter08_20250804_125614.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter09_20250804_125617.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter09_20250804_125617.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Account01_Iter10_20250804_125620.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Account01_Iter10_20250804_125620.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_001_20250804_104823.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_001_20250804_104823.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_001_20250804_114108.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_001_20250804_114108.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_002_20250804_104840.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_002_20250804_104840.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_002_20250804_114126.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_002_20250804_114126.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_003_20250804_104858.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_003_20250804_104858.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_003_20250804_114143.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_003_20250804_114143.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_004_20250804_104915.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_004_20250804_104915.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_004_20250804_114201.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_004_20250804_114201.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_005_20250804_104933.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_005_20250804_104933.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_006_20250804_104950.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_006_20250804_104950.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_007_20250804_105008.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_007_20250804_105008.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_008_20250804_105026.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_008_20250804_105026.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_009_20250804_105044.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_009_20250804_105044.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_010_20250804_105102.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_010_20250804_105102.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_011_20250804_105120.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_011_20250804_105120.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_012_20250804_105137.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_012_20250804_105137.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_013_20250804_105155.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_013_20250804_105155.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_014_20250804_105213.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_014_20250804_105213.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_015_20250804_105231.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_015_20250804_105231.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_016_20250804_105249.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_016_20250804_105249.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_017_20250804_105306.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_017_20250804_105306.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_018_20250804_105324.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_018_20250804_105324.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_019_20250804_105342.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_019_20250804_105342.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_020_20250804_105400.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_020_20250804_105400.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_021_20250804_105418.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_021_20250804_105418.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_022_20250804_105435.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/Balance_Iteration_022_20250804_105435.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_100Times_20250801_154630.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_100Times_20250801_154630.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:47:37 pm</td>
+        <td>12:56:37 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_100Times_20250801_155129.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_100Times_20250801_155129.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:56:37 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_100Times_20250803_224737.png' target='_blank'><img src='Screenshots/Load_Balance_Enquery_TC/LoadBalanceEnquiry_100Times_20250803_224737.png' width='300' height='200'/></a>
         </td>
       </tr>
   </tbody>
@@ -253,9 +537,9 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>22:46:53 pm</td>
+<td>12:55:42 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>LoadBalanceEnquiry_100Times</a>
+<a href="#" class="linked" test-id='2' id='2'>LoadBalanceEnquiry_MultiAccount_MultiFetch</a>
 </td>
 </tr>
 </tbody>
@@ -302,9 +586,9 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>22:46:53 pm</td>
+<td>12:55:42 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>LoadBalanceEnquiry_100Times</a>
+<a href="#" class="linked" test-id='2' id='2'>LoadBalanceEnquiry_MultiAccount_MultiFetch</a>
 </td>
 </tr>
 </tbody>
@@ -324,13 +608,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>03-08-2025 22:46:50</h3>
+<h3>04-08-2025 12:55:38</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>03-08-2025 22:47:38</h3>
+<h3>04-08-2025 12:56:38</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -383,8 +667,8 @@
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='25%'><b>2</b> events failed,
-<b data-tooltip='%'>6</b> others
+<small data-tooltip='4%'><b>2</b> events failed,
+<b data-tooltip='%'>46</b> others
 </small>
 </div>
 </div>
@@ -400,7 +684,7 @@
 </div></div>
 <script>
 var timeline = {
-"LoadBalanceEnquiry_100Times":43.252
+"LoadBalanceEnquiry_MultiAccount_MultiFetch":54.839
 };
 </script>
 <div class="row">
@@ -473,7 +757,7 @@ passEvents: 0,
 failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 6
+infoEvents: 46
 };
 </script>        </div>
       </div>
