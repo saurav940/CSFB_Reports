@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Retail Internet Banking Test Suite</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">18-08-2025 20:32:11</span></a>
+<a href="#"><span class="badge badge-primary">18-08-2025 20:36:26</span></a>
 </li>
 </ul>
 </div>
@@ -97,7 +97,7 @@
           <div class="test-detail">
             <p class="name">verifyAllRequestTypes</p>
             <p class="text-sm">
-              <span>8:32:14 pm</span> / <span>00:00:46:940</span>
+              <span>8:36:30 pm</span> / <span>00:00:55:819</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -106,9 +106,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">verifyAllRequestTypes</h5>
-<span class='badge badge-success'>08.18.2025 8:32:14 pm</span>
-<span class='badge badge-danger'>08.18.2025 8:33:01 pm</span>
-<span class='badge badge-default'>00:00:46:940</span>
+<span class='badge badge-success'>08.18.2025 8:36:30 pm</span>
+<span class='badge badge-danger'>08.18.2025 8:37:26 pm</span>
+<span class='badge badge-default'>00:00:55:819</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -122,25 +122,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:32:14 pm</td>
+        <td>8:36:30 pm</td>
         <td>
           📌 Test Started: verifyAllRequestTypes
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
         <td>
           <span class='badge white-text red'>Test FAILED ❌</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: Test failed: Failed processing Cheque Book row 1: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: (//select)[3]' (tried for 20 second(s) with 500 milliseconds interval)
+          <textarea readonly class="code-block">java.lang.AssertionError: Cheque Book request was not successful for row 1 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
-	at com.retail_ib.testcase.Request_TC.verifyAllRequestTypes(Request_TC.java:54)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.retail_ib.testcase.Request_TC.processChequeBookRequests(Request_TC.java:133)
+	at com.retail_ib.testcase.Request_TC.verifyAllRequestTypes(Request_TC.java:40)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -173,135 +176,212 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/00_After_Login_20250818_203027.png' target='_blank'><img src='Screenshots/Request_TC/00_After_Login_20250818_203027.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/00_After_Login_20250818_203229.png' target='_blank'><img src='Screenshots/Request_TC/00_After_Login_20250818_203229.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/00_After_Login_20250818_203642.png' target='_blank'><img src='Screenshots/Request_TC/00_After_Login_20250818_203642.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/01_AccountStatement_Tab_Clicked_Row_1_20250818_203028.png' target='_blank'><img src='Screenshots/Request_TC/01_AccountStatement_Tab_Clicked_Row_1_20250818_203028.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/01_AccountStatement_Tab_Clicked_Row_1_20250818_203231.png' target='_blank'><img src='Screenshots/Request_TC/01_AccountStatement_Tab_Clicked_Row_1_20250818_203231.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/01_AccountStatement_Tab_Clicked_Row_1_20250818_203643.png' target='_blank'><img src='Screenshots/Request_TC/01_AccountStatement_Tab_Clicked_Row_1_20250818_203643.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/02_Account_Selected_Row_1_20250818_203029.png' target='_blank'><img src='Screenshots/Request_TC/02_Account_Selected_Row_1_20250818_203029.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/02_Account_Selected_Row_1_20250818_203232.png' target='_blank'><img src='Screenshots/Request_TC/02_Account_Selected_Row_1_20250818_203232.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/02_Account_Selected_Row_1_20250818_203644.png' target='_blank'><img src='Screenshots/Request_TC/02_Account_Selected_Row_1_20250818_203644.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/03_After_Proceed_Row_1_20250818_203035.png' target='_blank'><img src='Screenshots/Request_TC/03_After_Proceed_Row_1_20250818_203035.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/03_After_Proceed_Row_1_20250818_203238.png' target='_blank'><img src='Screenshots/Request_TC/03_After_Proceed_Row_1_20250818_203238.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/03_After_Proceed_Row_1_20250818_203650.png' target='_blank'><img src='Screenshots/Request_TC/03_After_Proceed_Row_1_20250818_203650.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/04_ChequeBook_Tab_Clicked_Row_1_20250818_203036.png' target='_blank'><img src='Screenshots/Request_TC/04_ChequeBook_Tab_Clicked_Row_1_20250818_203036.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/04_ChequeBook_Tab_Clicked_Row_1_20250818_203239.png' target='_blank'><img src='Screenshots/Request_TC/04_ChequeBook_Tab_Clicked_Row_1_20250818_203239.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/04_ChequeBook_Tab_Clicked_Row_1_20250818_203651.png' target='_blank'><img src='Screenshots/Request_TC/04_ChequeBook_Tab_Clicked_Row_1_20250818_203651.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/05_ChequeBook_Details_Selected_Row_1_20250818_203038.png' target='_blank'><img src='Screenshots/Request_TC/05_ChequeBook_Details_Selected_Row_1_20250818_203038.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/05_ChequeBook_Details_Selected_Row_1_20250818_203652.png' target='_blank'><img src='Screenshots/Request_TC/05_ChequeBook_Details_Selected_Row_1_20250818_203652.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/06_After_ChequeBook_Proceed_Row_1_20250818_203043.png' target='_blank'><img src='Screenshots/Request_TC/06_After_ChequeBook_Proceed_Row_1_20250818_203043.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/06_After_ChequeBook_Proceed_Row_1_20250818_203658.png' target='_blank'><img src='Screenshots/Request_TC/06_After_ChequeBook_Proceed_Row_1_20250818_203658.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/07_TPIN_OTP_Entered_Row_1_20250818_203044.png' target='_blank'><img src='Screenshots/Request_TC/07_TPIN_OTP_Entered_Row_1_20250818_203044.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/07_TPIN_OTP_Entered_Row_1_20250818_203659.png' target='_blank'><img src='Screenshots/Request_TC/07_TPIN_OTP_Entered_Row_1_20250818_203659.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/08_After_Confirm_Row_1_20250818_203050.png' target='_blank'><img src='Screenshots/Request_TC/08_After_Confirm_Row_1_20250818_203050.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/08_After_Confirm_Row_1_20250818_203704.png' target='_blank'><img src='Screenshots/Request_TC/08_After_Confirm_Row_1_20250818_203704.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/98_After_Logout_20250818_203112.png' target='_blank'><img src='Screenshots/Request_TC/98_After_Logout_20250818_203112.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/98_After_Logout_20250818_203301.png' target='_blank'><img src='Screenshots/Request_TC/98_After_Logout_20250818_203301.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/98_After_Logout_20250818_203726.png' target='_blank'><img src='Screenshots/Request_TC/98_After_Logout_20250818_203726.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/99_Error_Final_State_20250818_203301.png' target='_blank'><img src='Screenshots/Request_TC/99_Error_Final_State_20250818_203301.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/Error_ChequeBook_Row_1_20250818_203300.png' target='_blank'><img src='Screenshots/Request_TC/Error_ChequeBook_Row_1_20250818_203300.png' width='300' height='200'/></a>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:33:01 pm</td>
+        <td>8:37:26 pm</td>
         <td>
           📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/verifyAllRequestTypes_20250818_203112.png' target='_blank'><img src='Screenshots/Request_TC/verifyAllRequestTypes_20250818_203112.png' width='300' height='200'/></a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:37:26 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Request_TC/verifyAllRequestTypes_20250818_203301.png' target='_blank'><img src='Screenshots/Request_TC/verifyAllRequestTypes_20250818_203301.png' width='300' height='200'/></a>
         </td>
       </tr>
   </tbody>
@@ -350,7 +430,7 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>20:32:14 pm</td>
+<td>20:36:30 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>verifyAllRequestTypes</a>
 </td>
@@ -399,7 +479,7 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>20:32:14 pm</td>
+<td>20:36:30 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>verifyAllRequestTypes</a>
 </td>
@@ -421,13 +501,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>18-08-2025 20:32:11</h3>
+<h3>18-08-2025 20:36:26</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>18-08-2025 20:33:03</h3>
+<h3>18-08-2025 20:37:28</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -480,8 +560,8 @@
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='9%'><b>2</b> events failed,
-<b data-tooltip='%'>20</b> others
+<small data-tooltip='6%'><b>2</b> events failed,
+<b data-tooltip='%'>31</b> others
 </small>
 </div>
 </div>
@@ -497,7 +577,7 @@
 </div></div>
 <script>
 var timeline = {
-"verifyAllRequestTypes":46.94
+"verifyAllRequestTypes":55.819
 };
 </script>
 <div class="row">
@@ -570,7 +650,7 @@ passEvents: 0,
 failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 20
+infoEvents: 31
 };
 </script>        </div>
       </div>
