@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Retail Internet Banking Test Suite</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">12-08-2025 22:52:57</span></a>
+<a href="#"><span class="badge badge-primary">18-08-2025 13:28:58</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -71,7 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -85,25 +90,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="skip" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag="RetailBanking"
           device="">
           <div class="test-detail">
-            <p class="name">verifyDirectTaxPayments</p>
+            <p class="name">verifyBillDeskPayment</p>
             <p class="text-sm">
-              <span>10:53:00 pm</span> / <span>00:00:00:002</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>1:29:14 pm</span> / <span>00:00:31:602</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">verifyDirectTaxPayments</h5>
-<span class='badge badge-success'>08.12.2025 10:53:00 pm</span>
-<span class='badge badge-danger'>08.12.2025 10:53:00 pm</span>
-<span class='badge badge-default'>00:00:00:002</span>
+<h5 class="test-status text-fail">verifyBillDeskPayment</h5>
+<span class='badge badge-success'>08.18.2025 1:29:14 pm</span>
+<span class='badge badge-danger'>08.18.2025 1:29:45 pm</span>
+<span class='badge badge-default'>00:00:31:602</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -117,16 +122,155 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:53:00 pm</td>
+        <td>1:29:14 pm</td>
         <td>
-          📌 Test Started: verifyDirectTaxPayments
+          📌 Test Started: verifyBillDeskPayment
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>10:53:00 pm</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:29:45 pm</td>
         <td>
-          <span class='badge white-text yellow'>Test SKIPPED ⚠️</span>
+          <span class='badge white-text red'>Test FAILED ❌</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:29:45 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Test case failed due to: Failed to select from account
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.retail_ib.testcase.Bill_Payment_Ticketing_TC.handleError(Bill_Payment_Ticketing_TC.java:108)
+	at com.retail_ib.testcase.Bill_Payment_Ticketing_TC.verifyBillDeskPayment(Bill_Payment_Ticketing_TC.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:29:45 pm</td>
+        <td>
+          📁 Screenshot folder not found: C:\Users\saurav.kumar\eclipse-workspace\CapBankQA/Screenshots/Bill_Payment_Ticketing_TC
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag="RetailBanking"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyTicketBooking</p>
+            <p class="text-sm">
+              <span>1:29:46 pm</span> / <span>00:00:31:254</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verifyTicketBooking</h5>
+<span class='badge badge-success'>08.18.2025 1:29:46 pm</span>
+<span class='badge badge-danger'>08.18.2025 1:30:17 pm</span>
+<span class='badge badge-default'>00:00:31:254</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">RetailBanking</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:29:46 pm</td>
+        <td>
+          📌 Test Started: verifyTicketBooking
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:17 pm</td>
+        <td>
+          <span class='badge white-text red'>Test FAILED ❌</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:30:17 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Test case failed due to: Failed to click TICKET BOOKING tab
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.retail_ib.testcase.Bill_Payment_Ticketing_TC.handleError(Bill_Payment_Ticketing_TC.java:108)
+	at com.retail_ib.testcase.Bill_Payment_Ticketing_TC.verifyTicketBooking(Bill_Payment_Ticketing_TC.java:101)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:17 pm</td>
+        <td>
+          📷 <b>Screenshot:</b> <a href='Screenshots/Bill_Payment_Ticketing_TC/verifyBillDeskPayment_20250818_132946.png' target='_blank'><img src='Screenshots/Bill_Payment_Ticketing_TC/verifyBillDeskPayment_20250818_132946.png' width='300' height='200'/></a>
         </td>
       </tr>
   </tbody>
@@ -143,10 +287,10 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
 <ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
@@ -154,15 +298,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-skip'>1</span>
+<span class='badge log badge-danger'>2</span>
 </span>
-<p class="name">RetailBanking</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>RetailBanking</h4>
-<span status="skip" class='badge log badge-skip'>1 skipped</span>
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -173,11 +317,74 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>22:53:00 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:29:14 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>verifyDirectTaxPayments</a>
+<a href="#" class="linked" test-id='2' id='2'>verifyBillDeskPayment</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:29:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>verifyTicketBooking</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">RetailBanking</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>RetailBanking</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:29:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>verifyBillDeskPayment</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:29:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>verifyTicketBooking</a>
 </td>
 </tr>
 </tbody>
@@ -197,13 +404,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>12-08-2025 22:52:57</h3>
+<h3>18-08-2025 13:28:58</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>12-08-2025 22:53:01</h3>
+<h3>18-08-2025 13:30:20</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -215,7 +422,7 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -236,8 +443,8 @@
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='100%'><b>2</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -256,8 +463,8 @@
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>2</b> others
+<small data-tooltip='50%'><b>4</b> events failed,
+<b data-tooltip='%'>4</b> others
 </small>
 </div>
 </div>
@@ -273,7 +480,7 @@
 </div></div>
 <script>
 var timeline = {
-"verifyDirectTaxPayments":0.002
+"verifyBillDeskPayment":31.602,"verifyTicketBooking":31.254
 };
 </script>
 <div class="row">
@@ -285,8 +492,8 @@ var timeline = {
 <tr>
 <td>RetailBanking</td>
 <td>0</td>
+<td>2</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0%</td>
 </tr>
@@ -326,9 +533,9 @@ var timeline = {
 var statusGroup = {
 parentCount: 5,
 passParent: 0,
-failParent: 0,
+failParent: 2,
 warningParent: 0,
-skipParent: 1,
+skipParent: 0,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -343,10 +550,10 @@ skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 passEvents: 0,
-failEvents: 0,
+failEvents: 4,
 warningEvents: 0,
-skipEvents: 1,
-infoEvents: 1
+skipEvents: 0,
+infoEvents: 4
 };
 </script>        </div>
       </div>
